@@ -1,0 +1,367 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+}
+.login{
+    width: 400px;
+    min-height: 260px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.error{
+    color: #D8000C;
+	background-color: #FFBABA;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding: 10px 5px;
+    text-align: center;
+    display: none;
+}
+.login form{
+    width: 100%;
+}
+.login input:not([type='file']){
+    display: block;
+    border: 1px solid gainsboro;
+    padding: 8px 3px;
+    width: 100%;
+}
+.login .fullname{
+    display: flex;
+    width: 100%;
+    
+}
+.login .input {
+   flex: 0.5;
+   margin-right: 5px;
+}
+
+.login .field{
+    margin-bottom: 15px;
+}
+.login label{
+    display: block;
+    margin-bottom: 5px;
+}
+.login p{
+    text-align: center;
+}
+.login button{
+    width: 90%;
+    margin:auto;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-color: black;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.login a{
+    color: black;
+    font-weight: bolder;
+}
+/*chatsssss*/
+.chats-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.chats-container .chats{
+    flex:0.3;
+    padding-top: 7px;
+    padding-left: 5px;
+    position: relative;
+}
+.chats-container .chats .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#search_user{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 5px 9px;
+    margin-top: 6px;
+}
+.chats-container .chats .search img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+.chats-container .chats .search button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+}
+.chats-container .chats .search-history{
+    display: flex;
+    align-items: center;
+}
+.chats-container .chats .search-history img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    margin-right: 5px;
+}
+.chats-container .chats-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chats-container .search-history .add-contact{
+    font-size: 40px;
+    color:grey;
+}
+.chats-container .chats .contacts{
+    padding-top: 10px;
+
+}
+.chats-container .chats .contact{
+    width: 100%;
+    display: flex;
+    height: 75px;
+    margin-bottom: 4px;
+    background-color: rgb(244,240,236,0.4);
+    padding:0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.contact-info{
+    width: calc(100% - 60px);
+}
+.chats-container .chats .contact img{
+  width:55px;
+  height: 55px;
+  border-radius: 30px;
+  margin-right: 10px;
+  align-self: center;
+}
+.chats-container .chats .contact .date{
+    width: 100%;
+    justify-content: space-between;
+}
+.chats-container .chats .contact .contact-info h5{
+ padding-bottom: 1px;
+ margin-bottom: 1px;
+ margin-top: 13px;
+ padding-top: 0;
+}
+.chats-container .chats .contact .contact-info p{
+    padding-top: 1px;
+    margin-top: 1px;
+    font-size: 13px;
+    color: gray;
+    display: block;
+}
+.chats-container .chats .contact .active-now{
+    width: 11px;
+    height: 11px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: absolute;
+    top:52px;
+    left: 39px;
+}
+.chats-container .chats .contact .date p{
+    margin-right: 9px;
+    margin-top: 10px;
+}
+.chats-container .chat{
+    flex:0.8;
+    padding-left: 20px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+/*chattttt*/
+.chats-container .chat .contacts{
+    padding-top: 10px;
+}
+
+.chats-container .chat .contact{
+    width: 100%;
+    display: flex;
+    height: 75px;
+    margin-bottom: 4px;
+    background-color: rgb(244,240,236,0.4);
+    padding:0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.chats-container .contacts .active{
+    background-color: rgba(192, 227, 248, 0.692);
+}
+.contact-info{
+    width: calc(100% - 60px);
+}
+.chats-container .chat .contact img{
+  width:55px;
+  height: 55px;
+  border-radius: 30px;
+  margin-right: 10px;
+  align-self: center;
+}
+.chats-container .chat .contact .date{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.chats-container .chat .contact .contact-info h5{
+ padding-bottom: 1px;
+ margin-bottom: 1px;
+ margin-top: 13px;
+ padding-top: 0;
+}
+.chats-container .chat .contact .contact-info p{
+    padding-top: 1px;
+    margin-top: 1px;
+    font-size: 13px;
+    color: gray;
+}
+.chats-container .chat .contact .active-now{
+    width: 11px;
+    height: 11px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: absolute;
+    top:52px;
+    left: 39px;
+}
+.chats-container .chat .contact .date p{
+    margin-right: 9px;
+    margin-top: 10px;
+}
+.chat .conv{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 430px;
+}
+.chat .conv .msg-from{
+    margin-bottom: 30px;
+    
+}
+.chat .conv .msg-from img{
+    width: 30px;
+    height: 30px;
+    border: 50%;
+    border-radius: 30px;
+    justify-self: flex-start;
+}
+.chat .conv .msg-from .msg{
+    min-height: 10px;
+    min-width: 30px;
+    max-width: 240px;
+    background-color: rgb(244,240,236,0.4);
+    border-top-left-radius: 5px;
+    padding: 5px 8px;
+   margin:0;
+   margin-left: 34px;
+   margin-top: 2px;
+}
+.chat .conv .msg-to{
+    min-height: 20px;
+    min-width: 90px;
+    max-width: 300px;
+    background-color: lightskyblue;
+    border-top-left-radius: 10px;
+    margin-right: 5px;
+    padding: 5px 8px;
+    bottom: 0;
+    margin-top: 15px;
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+.chat .send-msg{
+    bottom: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.chat .send-msg input{
+    display: block;
+    width: 80%;
+    background-color: rgb(244,240,236,0.4);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+.chat .send-msg i{
+    font-size: 23px;
+    margin-left: 10px;
+    
+}
+
+.search .contact{
+    background-color: white !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.hidden{
+    display: none;
+}
+.reaction{
+    margin-left: 40px;
+    margin-top: 2px;
+    min-width: 90px;
+    max-width: 247px;
+}
+.reactions i{
+    margin-left: 5px;
+}
+.reactions i.fa-thumbs-up{
+    color: blue;
+}
+i.fa-heart{
+    color: red;
+    display: block;
+   margin-top: -9px;
+   float: right;
+}
+.reactions i.fa-laugh-squint{
+    color:rgb(185, 185, 0);
+}
+.msg-to-reaction{
+    float: right;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .login{
+        width:100%;
+    }
+    .chats-container{
+        display: block;
+    }
+    .chats-container .chats{
+        flex:1;
+    }
+    .chats-container .chat{
+        display: none;
+    }
+
+}
